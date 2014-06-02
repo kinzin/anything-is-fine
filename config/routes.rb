@@ -2,10 +2,9 @@ AnythingIsFine::Application.routes.draw do
   resources :gifts
   root :to => 'gifts#index'
 
-
-  # get '/scooter/new', to: 'gifts#scooternew'
-
   post '/gifts/:id', to: 'gifts#update'
+
+  get '/gifts/:id', to: 'gifts#index'
 
   get '/gifts/:id/delete', to: 'gifts#destroy'
 

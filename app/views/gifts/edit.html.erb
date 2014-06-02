@@ -5,8 +5,8 @@
 	<input type="text" name="price" value="<%= @gift.price %>">
   <p>Website?</p>
 	<input type="text" name="website" value="<%= @gift.website %>"><br>
-  <p>Taken: </p>
-  <input type="checkbox" name="taken" value="true"><br>
+  <p>Taken:
+  <input type="checkbox" name="taken" value="true" <%= "checked" if @gift.taken == true %>> </p>
 	<button class="btn btn-primary" type="submit">HUZZAH</button>
 </form>
 

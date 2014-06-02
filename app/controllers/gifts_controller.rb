@@ -30,18 +30,14 @@ class GiftsController < ApplicationController
 		@gift = Gift.find(params[:id])
 	end
 
-	def show
-		@gift = Gift.find(params[:id])
-	end
-
 	def update
 		@gift         = Gift.find(params[:id])
 		@gift.name    = params[:name]
 		@gift.price   = params[:price]
 		@gift.website = params[:website]
-		@gift.taken   = params[:taken]
+		@gift.taken   = params[:taken] == "true" ? true : false
 		@gift.save
-		redirect_to gift_path(@gift)
+		redirect_to gifts_path
 	end
 
 	def destroy
