@@ -1,12 +1,14 @@
 <form class="form" action="<%= gift_path(@gift)%>" method="post">
-	<p>Name</p>
-	<input type="text" name="name" value="<%= @gift.name %>">
-	<p>How much is it?</p>
-	<input type="text" name="price" value="<%= @gift.price %>">
-  <p>Website?</p>
+	<label for="name">Name: </label>
+	<input type="text" name="name" value="<%= @gift.name %>"><br>
+
+	<label for="price">Price </label>
+	<input type="text" name="price" value="<%= @gift.price %>"><br>
+
+   <label for="website">Site: </label>
 	<input type="text" name="website" value="<%= @gift.website %>"><br>
-  <p>Taken:
-  <input type="checkbox" name="taken" value="true" <%= "checked" if @gift.taken == true %>> </p>
+  <label>Taken:
+  <input type="checkbox" name="taken" value="true" <%= "checked" if @gift.taken == true %>> </label>
 	<button class="btn btn-primary" type="submit">HUZZAH</button>
 </form>
 
