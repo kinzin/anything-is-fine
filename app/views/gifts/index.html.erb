@@ -21,7 +21,7 @@
 			<% @gifts.each do |gift| %>
 				<tr>
 					<td>
-						<a href="<%= gift.website %>"><%= gift.name %></a>
+						<a href="<%= gift.website %>" target="_blank"><%= gift.name %></a>
 					</td>
 					<td><%= '%.2f' % gift.price %></td>
 					<td><%= gift.taken ? "yes" : "nope" %></td>

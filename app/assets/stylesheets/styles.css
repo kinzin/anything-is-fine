@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: #eee;
   background-image: url('regbkg.jpg');
@@ -57,9 +61,9 @@ input {
   color:#ccc;
 }
 
-footer{
-  position: absolute;
-  bottom:10px;
-  right:30px;
-  margin: 0 auto;
+#push, #footer {
+  height: 40px;
+  text-align: right;
 }
+
+
