@@ -1,22 +1,59 @@
 body {
   background-color: #eee;
-  background-image: url('bg.jpg');
+  background-image: url('regbkg.jpg');
   background-size: cover;
+  color: #5768BB;
 }
 
 
 h1 {
-  color: #051B82;
-  font-family: 'Dancing Script', cursive;
-  font-size: 4em;
+  font-family: 'Great Vibes', cursive;
+  font-size: 6em;
+  text-align: center;
+  padding: 50px 0 20px;
 }
 
 table {
-  background-color: rgba(255,255,255,.5);
   font-size: 1.2em;
-  font-family: 'Helvetica Neue';
+  font-family: 'Gabriela';
+}
+
+.bordered {
+  width:90%;
+  margin:0 auto;
+  padding: 3.5px 7px 0px;
+  border: 1px #5768BB solid;
+  border-radius: 20px;
+}
+
+a{
+  color: #5768BB;
+}
+
+a:hover{
+  color:#ccc;
+  text-decoration: none;
+}
+
+table>tbody>tr{
+ border-top: 5px solid #ddd;
+}
+
+tr{
+  background-color:white;
 }
 
 input {
   margin-bottom: 22px;
+}
+
+.hide-me{
+  color:#ccc;
+}
+
+footer{
+  position: absolute;
+  bottom:10px;
+  right:30px;
+  margin: 0 auto;
 }
