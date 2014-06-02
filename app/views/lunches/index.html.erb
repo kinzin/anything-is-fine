@@ -1,0 +1,28 @@
+<table class="table">
+	<a href="/lunches/new">Add New</a>
+
+	<tr>
+		<th><a href="/lunches/sort_by/meal_name">Lunch<a/></th>
+		<th><a href="/lunches/sort_by/owner">Owner</a></th>
+		<th><a href="/lunches/sort_by/repeatable">Repeatable</a></th>
+		<th><a href="/lunches/sort_by/spiciness">Spiciness</a></th>
+		<th><a href="/lunches/sort_by/calories">Calories</a></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+	<% if @lunches %>
+		<% @lunches.each do |lunch| %>
+			<tr>
+				<td>
+					<a href="/lunches/<%= lunch.id %>"><%= lunch.meal_name %></a>
+				</td>
+				<td><%= lunch.owner %></td>
+				<td><%= lunch.repeatable %></td>
+				<td><%= lunch.spiciness %></td>
+				<td><%= lunch.calories %></td>
+				<td><a href="/lunches/<%= lunch.id %>/edit">Edit</a></td>
+				<td><a href="/lunches/<%= lunch.id %>/delete">Delete</a></td>
+			</tr>
+		<% end %>
+	<% end %>
+</table>

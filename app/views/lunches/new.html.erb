@@ -1,0 +1,25 @@
+<form class="form" action="<%= lunches_path %>" method="post">
+  <label for="meal_name">Add a lunch: </label>
+  <input type="text" name="meal_name" placeholder="ramen"><br>
+
+  <label for="owner">Owner: </label>
+  <input type="text" name="owner" placeholder="me"><br>
+
+  <label for="calories">Number of calories: </label>
+  <input type="text" name="calories" placeholder="500"><br>
+
+  <p>Would you eat it again?</p>
+  <input type="radio" name="repeatable" value="true">
+  <label for="true">Hell Ya</label>
+  <input type="radio" name="repeatable" value="false">
+  <label for="false">Hell No</label><br>
+
+  <label for="calories">Spiciness: </label>
+  <input type="range" name="spiciness" max="10" min="0"><br>
+
+  <label for="photo_url">Photo URL: </label>
+  <input type="text" name="photo_url"><br>
+  <input class="btn btn-primary" type="submit">
+</form>
+
+

@@ -1,0 +1,18 @@
+<form class="form" action="<%= lunch_path(@lunch)%>" method="post">
+	<p>What's it called?</p>
+	<input type="text" name="meal_name" value="<%= @lunch.meal_name	%>">
+	<p>How spicy is it?</p>
+	<input type="range" name="spiciness" max="10" min="0" value="<%= @lunch.spiciness	%>">
+	<p>Who owns it?</p>
+	<input type="text" name="owner" value="<%= @lunch.owner	%>">
+	<p>Would you eat it again?</p>
+	<input type="radio" name="repeatable" value="true" <% if @lunch.repeatable == true %> checked <% end %> >
+	<label for="true">Hell Ya</label>
+	<input type="radio" name="repeatable" value="false" <% if @lunch.repeatable == false %> checked <% end %> >
+	<label for="false">Hell No</label>
+	<p>How many calories?</p>
+	<input type="text" name="calories" value="<%= @lunch.calories	%>">
+	<p>Do you have an image of it?</p>
+	<input type="text" name="photo_url" value="<%= @lunch.photo_url	%>"><br>
+	<button class="btn btn-primary" type="submit">HUZZAH</button>
+</form>
