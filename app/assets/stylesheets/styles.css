@@ -3,9 +3,16 @@ body {
   background-image: url('regbkg.jpg');
   background-size: cover;
   color: #5768BB;
+  font-family: 'Gabriela';
 }
 
-
+p{
+  text-align: center;
+  font-size: 14px;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 12px;
+}
 h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 6em;
@@ -15,7 +22,6 @@ h1 {
 
 table {
   font-size: 1.2em;
-  font-family: 'Gabriela';
 }
 
 .bordered {
