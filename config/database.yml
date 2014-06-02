@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: anything_is_fine_development
+  pool: 5
+  username:
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: anything_is_fine_test
+  pool: 5
+  username:
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: anything_is_fine_production
+  pool: 5
+  username:
+  password:
